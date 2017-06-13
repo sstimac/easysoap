@@ -11,7 +11,8 @@
     "request": "^2.69.0",
     "underscore": "^1.8.3",
     "xmldoc": "^0.4.0",
-    "wsdlrdr": "git+https://github.com/sstimac/wsdlrdr.git"
+    "wsdlrdr": "git+https://github.com/sstimac/wsdlrdr.git",
+    "rn-nodeify": "7.0.1"
   },
   "devDependencies": {
     "tap-spec": "^4.1.0",
@@ -29,7 +30,8 @@
     "node" : ">=4.0.0"
   },
   "scripts": {
-    "test": "node ./tests/tests.js | tap-spec"
+    "test": "node ./tests/tests.js | tap-spec",
+    "postinstall": "rn-nodeify --install --hack"
   },
   "license": "MIT",
   "contributors": [
